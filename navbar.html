@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OUR FIRST WEB</title>
+	<style>
+		body
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+		html
+		{
+			scroll-behavior: smooth;
+		}
+		.navbar
+		{
+			width: 100%;
+			height: 60px;
+			background-color: #3E0703;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			position: fixed;
+		}
+		.navbar ul
+		{
+			display: flex;
+		}
+		.navbar ul li
+		{
+			list-style: none;
+			display: inline-block;
+		}
+		.navbar ul li a
+		{
+			color: white;
+			padding: 10px 20px;
+			text-decoration: none;
+			font-size: 25px;
+			font-family: monospace;
+			border-radius: 8px;
+		}
+		.navbar ul li a:hover
+		{
+			color: black;
+			background-color: white;
+			transition: 1s;
+		}
+		.navbar .searchbar
+		{
+			padding-right: 20px;
+		}
+		.navbar .searchbar input
+		{
+			height: 33px;
+			width: 250px;
+			border-radius: 7px;
+			border: 2px solid black;
+			background-color: transparent;
+			color: white;
+		}
+		.navbar .searchbar button
+		{
+			height: 25px;
+			border-radius: 7px;
+			border: 2px solid #C5C7BC;
+			background-color: transparent;
+			color: #C5C7BC;
+			font-weight: bold;
+		}
+		.navbar .searchbar button:hover
+		{
+			background-color: #C5C7BC;
+			color: #450693;
+			cursor: pointerl;
+		}
+
+
+		#home
+		{
+			width: 100%;
+			height: 930px;
+			background-image: url(https://images.unsplash.com/photo-1606925207923-c580f25966b0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1112);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+
+		#about
+		{
+			width: 100%;
+			height: 850px;
+			/*background-color: #896767;*/
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+		.box
+		{
+			width: 30%;
+			height: 720px;
+			/*background-color: #232348;*/
+			border: 2px solid red;
+			border-radius: 10px;
+			/*border-top-left-radius: 30px;
+			border-bottom-right-radius: 30px;*/
+			overflow: hidden;
+		}
+		.box:hover
+		{
+			transform: scale(1.01);
+			transition: 2s;
+			box-shadow: 4px 4px 12px 2px gray;
+		}
+		.box img
+		{
+			border-radius: 10px;
+			padding-left: 30px;
+			padding-top: 10px;
+		}
+		.box button
+		{
+			margin-left: 240px;
+			margin-top: 50px;
+		}
+
+		#contact
+		{
+			width: 100%;
+			height: 900px;
+			background-color: #896798;
+		}
+
+		#contact .left
+		{
+			width: 50%;
+			height: 900px;
+			background-color: #898677;
+			float: left;
+		}
+		#contact .right
+		{
+			width: 50%;
+			height: 900px;
+			background-color: #335647;
+			float: left;
+		}
+
+		#contact .right .form_data
+		{
+			position: relative;
+			height: 350px;
+			width: 350px;
+			top: 30%;
+			left: 30%;
+			background-color: rgba(255, 0, 0, 0.5);
+			border-radius: 10px;
+			padding: 50px;
+		}
+		#contact .right .form_data input
+		{
+			display: block;
+			width: 250px;
+			border-radius: 6px;
+			border: 2px solid black;
+		}
+		#contact .right .form_data .text
+		{
+			font-size: 25px;
+			font-family: monospace;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="navbar">
+	
+	<div class="logo">
+		<img src="logo.jpg" width="100px" height="60px">
+	</div>
+
+	<ul>
+		<li><a href="#home">HOME</a></li>
+		<li><a href="#about">ABOUT</a></li>
+		<li><a href="#contact">CONTACT</a></li>
+	</ul>
+
+	<div class="searchbar">
+		<input type="search" name="search">
+		<button>SEARCH</button>
+	</div>
+
+</div>
+
+<section id="home"></section>
+
+<section id="about">
+
+	<div class="box">
+		<img src="https://dubey-shop.vercel.app/images/products/f1.jpg" width="90%" height="80%">
+		<button>BUY NOW</button>
+	</div>
+	<div class="box">
+		<img src="https://dubey-shop.vercel.app/images/products/f1.jpg" width="90%" height="80%">
+		<button>BUY NOW</button>
+	</div>
+	<div class="box">
+		<img src="https://dubey-shop.vercel.app/images/products/f1.jpg" width="90%" height="80%">
+		<button>BUY NOW</button>
+	</div>
+
+</section>
+
+<section id="contact">
+	<div class="left">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60210.620571739724!2d72.78820119999999!3d19.40532805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a91f9f96a3eb%3A0x919d939cdec8f9f9!2sNalasopara%20West%2C%20Nala%20Sopara%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1761372407216!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="100%"></iframe>
+	</div>
+
+	<div class="right">
+		<div class="form_data">
+			<form>
+				<span class="text">Username:</span> <input type="text" name="uname"> <br><br>
+				<span class="text">Email:</span> <input type="email" name="email"> <br><br>
+				<span class="text">Contact:</span> <input type="text" name="contact"> <br><br>
+				<button>Submit</button>
+			</form>
+		</div>
+	</div>
+
+</section>
+
+
+<!-- <input type="color" name=""> -->	
+</body>
+</html>
